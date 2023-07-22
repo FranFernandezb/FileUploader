@@ -17,4 +17,15 @@ public interface ArchivoService {
     Archivo findArchivoByHashSha512AndUsuarioId(String hash256, Long usuarioId);
 
     boolean isHashTypeValid(String hashType);
+
+    String encodeToHash256(byte[] file);
+
+    String encodeToHash512(byte[] file);
+
+    Archivo createAndSaveFile(String hash512, String hash256, String filename);
+
+    boolean isHashType256(String hashType);
+
+    List<Archivo> findByUsuario(Long accountId);
+
 }

@@ -29,7 +29,7 @@ public class Archivo {
 
     public Archivo() { }
 
-    public Archivo(Long idArchivo, String fileName, String hashSha256, String hashSha512, LocalDateTime lastUpload, Usuario usuario) {
+    public Archivo(String fileName, String hashSha256, String hashSha512, LocalDateTime lastUpload, Usuario usuario) {
         this.idArchivo = idArchivo;
         this.fileName = fileName;
         this.hashSha256 = hashSha256;
